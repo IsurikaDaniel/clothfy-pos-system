@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<AnchorPane prefHeight="478.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clothify.controller.admin.AdminDashbordFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#453d3d" height="485.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="134.0" />
+      <ImageView fitHeight="194.0" fitWidth="466.0" layoutX="134.0" layoutY="-6.0">
+         <image>
+            <Image url="@../../img/dashBord.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -20,6 +20,7 @@ public class BoFactory {
     public <T extends SuperBo>T getBo(BoType type){
         switch (type){
             case ACCOUNT: return (T) new AccountBoImpl();
+            //case ACCOUNT: return (T) new AccountBoImpl();
 
         }
         return null;

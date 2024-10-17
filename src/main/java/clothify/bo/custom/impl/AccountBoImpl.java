@@ -18,7 +18,7 @@ public class AccountBoImpl implements AccountBO {
         return accountDao.save(new Account(
                 dto.getEmail(),
                 dto.getPassword(),
-                dto.getPassword()
+                dto.getJobRole()
         ));
     }
 

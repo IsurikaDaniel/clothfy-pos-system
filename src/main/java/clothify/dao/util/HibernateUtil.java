@@ -25,10 +25,7 @@ public class HibernateUtil {
             // Create Metadata from annotated classes
             Metadata metadata = new MetadataSources(standardRegistry)
                     .addAnnotatedClass(Account.class)
-                    // Uncomment the below lines if you have more entities
-                    //.addAnnotatedClass(Item.class)
-                    //.addAnnotatedClass(Orders.class)
-                    //.addAnnotatedClass(OrderDetail.class)
+                  
                     .getMetadataBuilder()
                     .applyImplicitNamingStrategy(ImplicitNamingStrategyJpaCompliantImpl.INSTANCE)
                     .build();

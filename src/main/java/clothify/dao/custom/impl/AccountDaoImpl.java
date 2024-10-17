@@ -5,6 +5,7 @@ import clothify.dao.util.HibernateUtil;
 import clothify.entity.Account;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -32,6 +33,10 @@ public class AccountDaoImpl implements AccountDao {
 
     @Override
     public List<Account> getAll() throws SQLException, ClassNotFoundException {
-        return List.of();
+        Session session = HibernateUtil.getSession();
+        Query query = session.createQuery("FROM Account");
+        List<Account> list = query.list();
+        session.close();
+        return list;
     }
 }

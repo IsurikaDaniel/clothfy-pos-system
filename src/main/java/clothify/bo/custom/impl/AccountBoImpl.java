@@ -8,6 +8,7 @@ import clothify.dto.AccountDto;
 import clothify.entity.Account;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class AccountBoImpl implements AccountBO {
@@ -34,6 +35,15 @@ public class AccountBoImpl implements AccountBO {
 
     @Override
     public List<AccountDto> allAccount() throws SQLException, ClassNotFoundException {
-        return List.of();
+        List<Account> entityList = accountDao.getAll();
+        List<AccountDto> list = new ArrayList<>();
+        for (Account accounts:entityList) {
+            list.add(new AccountDto(
+                    accounts.getEmail(),
+                    accounts.getPassword(),
+                    accounts.getJobRole()
+            ));
+        }
+        return list;
     }
 }

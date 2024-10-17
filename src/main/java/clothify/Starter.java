@@ -14,10 +14,9 @@ public class Starter extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        // Corrected path to ensure FXML is found in the resources
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/register_Form.fxml"));
 
-        // Set the scene with the loaded FXML
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/login_form.fxml"));
+
         Scene scene = new Scene(loader.load());
 
         // Set up the stage

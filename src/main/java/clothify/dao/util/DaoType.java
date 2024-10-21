@@ -1,5 +1,6 @@
 package clothify.dao.util;
 
 public enum DaoType {
-    ACCOUNT
+    ACCOUNT,
+    EMPLOYEE
 }

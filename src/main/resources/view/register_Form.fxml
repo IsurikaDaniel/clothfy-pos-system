@@ -31,12 +31,12 @@
                 <Font name="System Bold" size="14.0" />
             </font>
         </JFXButton>
-        <JFXTextField fx:id="txtEmail" focusColor="#473e3e" layoutX="210.0" layoutY="223.0" prefHeight="25.0" prefWidth="188.0" promptText="Email" unFocusColor="#010432">
+        <JFXTextField fx:id="txtEmail" focusColor="#473e3e" layoutX="210.0" layoutY="223.0" prefHeight="25.0" prefWidth="188.0" promptText="Email" style="-fx-background-color: white;" unFocusColor="#010432">
             <font>
                 <Font size="14.0" />
             </font>
         </JFXTextField>
-        <JFXTextField fx:id="txtPassword" focusColor="#473e3e" layoutX="210.0" layoutY="271.0" prefHeight="25.0" prefWidth="188.0" text="Password" unFocusColor="#010432">
+        <JFXTextField fx:id="txtPassword" focusColor="#473e3e" layoutX="210.0" layoutY="271.0" prefHeight="25.0" prefWidth="188.0" promptText="Password" style="-fx-background-color: white;" unFocusColor="#010432">
             <font>
                 <Font size="14.0" />
             </font>

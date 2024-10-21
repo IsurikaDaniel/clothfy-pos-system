@@ -9,17 +9,24 @@ import javax.persistence.*;
 
 @ToString
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "Employee")
 public class Employee {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Integer id;
-    private String Name;
+    private String name;
     private Integer contact;
     private String email;
+    private String address;
+    private String company;
+
+    public Employee(Integer id,String name, Integer contact, String email, String address, String company) {
+        this.id = id;
+        this.name = name;
+        this.contact = contact;
+        this.email = email;
+        this.address = address;
+        this.company = company;
+    }
 }

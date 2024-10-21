@@ -2,6 +2,7 @@ package clothify.bo.custom;
 
 import clothify.bo.SuperBo;
 import clothify.bo.custom.impl.AccountBoImpl;
+import clothify.bo.custom.impl.EmployeeBoImpl;
 import clothify.dao.util.BoType;
 
 public class BoFactory {
@@ -20,7 +21,8 @@ public class BoFactory {
     public <T extends SuperBo>T getBo(BoType type){
         switch (type){
             case ACCOUNT: return (T) new AccountBoImpl();
-            //case ACCOUNT: return (T) new AccountBoImpl();
+            case EMPLOYEE: return (T) new EmployeeBoImpl();
+
 
         }
         return null;

@@ -12,7 +12,6 @@ import javax.persistence.*;
 @NoArgsConstructor
 @ToString
 @Entity
-@Table(name="Account")
 
 public class Account {
 

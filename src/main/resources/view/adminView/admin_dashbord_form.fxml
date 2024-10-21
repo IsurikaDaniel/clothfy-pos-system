@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="478.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clothify.controller.admin.AdminDashbordFormController">
+<AnchorPane fx:id="paneAdmin" prefHeight="478.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clothify.controller.admin.AdminDashbordFormController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#453d3d" height="485.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="134.0" />
       <ImageView fitHeight="194.0" fitWidth="466.0" layoutX="134.0" layoutY="-6.0">
@@ -14,5 +15,10 @@
             <Image url="@../../img/dashBord.jpg" />
          </image>
       </ImageView>
+      <Label layoutX="20.0" layoutY="180.0" onMousePressed="#clickOnActionAddEmp" onTouchPressed="#clickOnActionAddEmployee" text="Add Employee " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

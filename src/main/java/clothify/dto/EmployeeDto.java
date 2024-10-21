@@ -13,7 +13,10 @@ import lombok.ToString;
 public class EmployeeDto {
 
     private Integer id;
-    private String Name;
+    private String name;
     private Integer contact;
     private String email;
+    private String address;
+    private String company;
+
 }

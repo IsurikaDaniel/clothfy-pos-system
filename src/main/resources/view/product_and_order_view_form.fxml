@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="1093.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clothify.controller.ProductAndOrderViewFormController">
+   <children>
+      <ImageView fitHeight="286.0" fitWidth="736.0" layoutX="-1.0">
+         <image>
+            <Image url="@../img/main-banner.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="298.0" layoutY="207.0" text="Products">
+         <font>
+            <Font name="Goudy Old Style Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="541.0" layoutY="379.0">
+         <image>
+            <Image url="@../img/search.png" />
+         </image>
+      </ImageView>
+      <JFXTextField layoutX="208.0" layoutY="380.0" prefHeight="25.0" prefWidth="320.0" text="Search" unFocusColor="#7091ba" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9ac" height="155.0" layoutX="23.0" layoutY="459.0" stroke="BLACK" strokeType="INSIDE" width="116.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9ac" height="155.0" layoutX="161.0" layoutY="459.0" stroke="BLACK" strokeType="INSIDE" width="116.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9ac" height="155.0" layoutX="296.0" layoutY="459.0" stroke="BLACK" strokeType="INSIDE" width="116.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9ac" height="155.0" layoutX="23.0" layoutY="648.0" stroke="BLACK" strokeType="INSIDE" width="116.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9ac" height="155.0" layoutX="161.0" layoutY="648.0" stroke="BLACK" strokeType="INSIDE" width="116.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9ac" height="155.0" layoutX="296.0" layoutY="648.0" stroke="BLACK" strokeType="INSIDE" width="116.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0d294d" height="596.0" layoutX="463.0" layoutY="453.0" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9ac" height="155.0" layoutX="25.0" layoutY="822.0" stroke="BLACK" strokeType="INSIDE" width="116.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9ac" height="155.0" layoutX="163.0" layoutY="822.0" stroke="BLACK" strokeType="INSIDE" width="116.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9ac" height="155.0" layoutX="298.0" layoutY="822.0" stroke="BLACK" strokeType="INSIDE" width="116.0" />
+      <Label layoutX="520.0" layoutY="480.0" text="Orders" textFill="WHITE">
+         <font>
+            <Font name="Goudy Old Style Bold" size="48.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9fd" height="57.0" layoutX="487.0" layoutY="566.0" stroke="BLACK" strokeType="INSIDE" width="203.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9fd" height="57.0" layoutX="487.0" layoutY="635.0" stroke="BLACK" strokeType="INSIDE" width="203.0" />
+      <Label layoutX="477.0" layoutY="894.0" prefHeight="22.0" prefWidth="66.0" text="Items :" textFill="WHITE">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="477.0" layoutY="925.0" prefHeight="22.0" prefWidth="96.0" text="Discount :" textFill="WHITE">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="477.0" layoutY="956.0" prefHeight="22.0" prefWidth="96.0" text="Total :" textFill="WHITE">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="540.0" layoutY="998.0" onAction="#btnGetBillonAction" prefHeight="37.0" prefWidth="96.0" style="-fx-background-color: #B9C8DB;" text="Get Bill">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="173.0" layoutY="1012.0" onAction="#btnAddItemAction" prefHeight="37.0" prefWidth="96.0" style="-fx-background-color: #365680;" text="Add Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="208.0" layoutY="306.0" prefHeight="28.0" prefWidth="96.0" text="Ladies" textFill="#9e6363">
+         <font>
+            <Font name="Goudy Old Style Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="306.0" prefHeight="28.0" prefWidth="96.0" text="Gents" textFill="#9e6363">
+         <font>
+            <Font name="Goudy Old Style Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="469.0" layoutY="306.0" prefHeight="28.0" prefWidth="96.0" text="Kids" textFill="#9e6363">
+         <font>
+            <Font name="Goudy Old Style Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="452.0" prefWidth="291.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clothify.controller.AddItemFormController">
+   <children>
+      <Label layoutX="95.0" layoutY="31.0" text="Orders">
+         <font>
+            <Font name="Goudy Old Style Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtItemName" layoutX="50.0" layoutY="90.0" prefHeight="37.0" prefWidth="196.0" promptText="Item Name" style="-fx-background-color: #5f96b8; -fx-background-radius: 8;" text="Item Name" />
+      <TextField fx:id="txtSize" layoutX="50.0" layoutY="147.0" prefHeight="37.0" prefWidth="196.0" promptText="Item Name" style="-fx-background-color: #5f96b8; -fx-background-radius: 8;" text="Size" />
+      <TextField fx:id="txtColor" layoutX="51.0" layoutY="201.0" prefHeight="37.0" prefWidth="196.0" promptText="Item Name" style="-fx-background-color: #5f96b8; -fx-background-radius: 8;" text="Color" />
+      <TextField fx:id="txtPrice" layoutX="53.0" layoutY="254.0" prefHeight="37.0" prefWidth="196.0" promptText="Item Name" style="-fx-background-color: #5f96b8; -fx-background-radius: 8;" text="Prize" />
+      <TextField fx:id="txtDiscount" layoutX="50.0" layoutY="306.0" prefHeight="37.0" prefWidth="196.0" promptText="Item Name" style="-fx-background-color: #5f96b8; -fx-background-radius: 8;" text="Discount " />
+      <JFXButton layoutX="13.0" layoutY="399.0" onAction="#btnAddonAction" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #365680; -fx-background-radius: 15;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="197.0" layoutY="399.0" onAction="#btnUpdateonAction" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #365680; -fx-background-radius: 15;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="105.0" layoutY="399.0" onAction="#btnRemoveonAction" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #365680; -fx-background-radius: 15;" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

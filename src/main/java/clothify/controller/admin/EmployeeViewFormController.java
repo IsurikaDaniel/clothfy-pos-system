@@ -8,7 +8,6 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
-
 import java.sql.SQLException;
 
 public class EmployeeViewFormController {
@@ -36,13 +35,11 @@ public class EmployeeViewFormController {
     @FXML
     void btnAddonAction(ActionEvent event) throws SQLException, ClassNotFoundException {
 
-            // Validate that the ID and contact fields are not empty
             if (txtempID.getText().isEmpty() || txtcontact.getText().isEmpty()) {
                 new Alert(Alert.AlertType.ERROR, "Employee ID and Contact cannot be empty!").show();
                 return;
             }
 
-            // Create the EmployeeDto object
             EmployeeDto employeeDto = new EmployeeDto(
                     Integer.parseInt(txtempID.getText()),
                     txtempName.getText(),
@@ -54,10 +51,8 @@ public class EmployeeViewFormController {
 
         try {
 
-            // Save the employee using employeeBo
             boolean isSaved = employeeBo.saveEmployee(employeeDto);
 
-            // Show appropriate alerts based on success or failure
             if (isSaved) {
                 new Alert(Alert.AlertType.INFORMATION, "Employee Registered!").show();
             } else {
@@ -65,13 +60,10 @@ public class EmployeeViewFormController {
             }
 
         } catch (NumberFormatException e) {
-            // Handle format errors (e.g., non-integer input for employee ID or contact)
             new Alert(Alert.AlertType.ERROR, "Invalid format for Employee ID or Contact!").show();
         } catch (NullPointerException e) {
-            // Handle case where employeeBo might be null
             new Alert(Alert.AlertType.ERROR, "Unexpected error occurred: EmployeeBo is not initialized properly!").show();
         } catch (Exception e) {
-            // Handle any other exceptions
             new Alert(Alert.AlertType.ERROR, "An error occurred: " + e.getMessage()).show();
         }
 
@@ -108,7 +100,6 @@ public class EmployeeViewFormController {
             boolean isUpdated = employeeBo.updateEmployee(dto);
             if (isUpdated){
                 new Alert(Alert.AlertType.INFORMATION,"Employee "+dto.getName()+" Updated!").show();
-
             }
 
         } catch (ClassNotFoundException | SQLException e) {

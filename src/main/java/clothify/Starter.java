@@ -15,7 +15,7 @@ public class Starter extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/login_form.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/adminView/employee_view_form.fxml"));
 
         Scene scene = new Scene(loader.load());
 

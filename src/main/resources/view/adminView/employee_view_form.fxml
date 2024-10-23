@@ -6,7 +6,6 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="685.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clothify.controller.admin.EmployeeViewFormController">
@@ -22,17 +21,16 @@
       <JFXTextField fx:id="txtEmail" layoutX="128.0" layoutY="494.0" prefHeight="25.0" prefWidth="241.0" promptText="Email" unFocusColor="#2f2929" />
       <JFXTextField fx:id="txtAddress" layoutX="128.0" layoutY="533.0" prefHeight="25.0" prefWidth="241.0" promptText="Address" unFocusColor="#2f2929" />
       <JFXTextField fx:id="txtCompany" layoutX="128.0" layoutY="574.0" prefHeight="25.0" prefWidth="241.0" promptText="Company " unFocusColor="#2f2929" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7091bae2" height="31.0" layoutX="110.0" layoutY="302.0" stroke="BLACK" strokeType="INSIDE" width="290.0" />
-      <JFXButton layoutX="98.0" layoutY="640.0" onAction="#btnAddonAction" prefHeight="31.0" prefWidth="93.0" ripplerFill="#112e51" style="-fx-background-color: #365680;" text="ADD" textFill="WHITE">
+      <JFXButton layoutX="98.0" layoutY="640.0" onAction="#btnAddonAction" prefHeight="31.0" prefWidth="93.0" ripplerFill="#112e51" style="-fx-background-color: #365680; -fx-background-radius: 15;" text="ADD" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font></JFXButton>
-      <JFXButton layoutX="219.0" layoutY="640.0" onAction="#btnUpdateonAction" prefHeight="31.0" prefWidth="93.0" ripplerFill="#112e51" style="-fx-background-color: #365680;" text="UPDATE" textFill="WHITE">
+      <JFXButton layoutX="219.0" layoutY="640.0" onAction="#btnUpdateonAction" prefHeight="31.0" prefWidth="93.0" ripplerFill="#112e51" style="-fx-background-color: #365680; -fx-background-radius: 15;" text="UPDATE" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="340.0" layoutY="640.0" onAction="#btnRemoveonAction" prefHeight="31.0" prefWidth="93.0" ripplerFill="#112e51" style="-fx-background-color: #365680;" text="REMOVE" textFill="WHITE">
+      <JFXButton layoutX="340.0" layoutY="640.0" onAction="#btnRemoveonAction" prefHeight="31.0" prefWidth="93.0" ripplerFill="#112e51" style="-fx-background-color: #365680; -fx-background-radius: 15;" text="REMOVE" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
@@ -42,5 +40,11 @@
             <Font size="36.0" />
          </font>
       </Label>
+      <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="433.0" layoutY="308.0">
+         <image>
+            <Image url="@../../img/search.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtSerchAddEmp" layoutX="98.0" layoutY="308.0" prefHeight="25.0" prefWidth="320.0" text="Search" unFocusColor="#7091ba" />
    </children>
 </AnchorPane>

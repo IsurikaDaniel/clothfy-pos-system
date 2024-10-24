@@ -18,4 +18,13 @@ public class CustomerDto {
     private Integer contact;
     private String address;
     private String description;
+
+    public CustomerDto(String name, String email, Integer contact, String address, String description) {
+
+        this.name = name;
+        this.email = email;
+        this.contact = contact;
+        this.address = address;
+        this.description = description;
+    }
 }

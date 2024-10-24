@@ -7,8 +7,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clothify.controller.employee.EmpDashbordFormController">
+<AnchorPane fx:id="paneEmpDashboard" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clothify.controller.employee.EmpDashbordFormController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#453d3d" height="485.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="134.0" />
       <ImageView fitHeight="194.0" fitWidth="466.0" layoutX="134.0">
@@ -16,12 +15,12 @@
             <Image url="@../../img/dashBord.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="20.0" layoutY="214.0" onMousePressed="#clickOnActionAddCus" onTouchPressed="#clickOnActionAddEmployee" text="Add Customer" textFill="WHITE">
+      <Label layoutX="20.0" layoutY="214.0" onMousePressed="#clickOnActionAddCus" text="Add Customer" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="20.0" layoutY="239.0" onMousePressed="#clickOnActionAddSup" onTouchPressed="#clickOnActionAddEmployee" text="Add Supplier" textFill="WHITE">
+      <Label layoutX="20.0" layoutY="239.0" onMousePressed="#clickOnActionAddSup" text="Add Supplier" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
@@ -36,7 +35,7 @@
             <Font name="Yu Gothic UI Semibold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="42.0" layoutY="134.0" onMousePressed="#clickOnActionProduct" onTouchPressed="#clickOnActionAddEmployee" text="Product" textFill="WHITE">
+      <Label layoutX="42.0" layoutY="134.0" onMousePressed="#clickOnActionProduct"  text="Product" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>

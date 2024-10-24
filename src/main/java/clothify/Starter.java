@@ -16,10 +16,9 @@ public class Starter extends Application {
     public void start(Stage stage) throws IOException {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/register_Form.fxml"));
-
+       // FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/employeeView/addcustomer_form.fxml"));
         Scene scene = new Scene(loader.load());
 
-        // Set up the stage
         stage.setScene(scene);
         stage.setTitle("Login Form");
         stage.show();

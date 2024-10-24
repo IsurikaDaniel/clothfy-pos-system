@@ -1,9 +1,7 @@
 package clothify.bo.custom;
 
 import clothify.bo.SuperBo;
-import clothify.dao.custom.EmployeeDao;
 import clothify.dto.EmployeeDto;
-
 import java.sql.SQLException;
 import java.util.List;
 

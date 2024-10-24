@@ -20,5 +20,6 @@
         <!-- Add entity mappings -->
         <mapping class="clothify.entity.Employee"/>
         <mapping class="clothify.entity.Account"/>
+        <mapping class="clothify.entity.Customer"/>
     </session-factory>
 </hibernate-configuration>

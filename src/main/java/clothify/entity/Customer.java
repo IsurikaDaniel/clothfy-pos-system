@@ -12,20 +12,17 @@ import javax.persistence.*;
 @ToString
 @Data
 @Entity
-@Table(name = "Customer")
 public class Customer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private String id;
     private String name;
     private String email;
-    private Integer contact;
+    private String contact;
     private String address;
     private String description;
 
-    public Customer(String name, String email, Integer contact, String address, String description) {
+    public Customer(String name, String email, String contact, String address, String description) {
         this.name = name;
         this.email = email;
         this.contact = contact;

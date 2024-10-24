@@ -5,7 +5,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-@AllArgsConstructor
 @NoArgsConstructor
 @ToString
 @Data
@@ -15,16 +14,18 @@ public class CustomerDto {
     private String id;
     private String name;
     private String email;
-    private Integer contact;
+    private String contact;
     private String address;
     private String description;
 
-    public CustomerDto(String name, String email, Integer contact, String address, String description) {
-
+    public CustomerDto(String id,String name, String email, String contact, String address, String description) {
+        this.id = id;
         this.name = name;
         this.email = email;
         this.contact = contact;
         this.address = address;
         this.description = description;
     }
+
+
 }

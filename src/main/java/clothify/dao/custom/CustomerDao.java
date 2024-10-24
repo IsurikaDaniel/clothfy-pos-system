@@ -5,5 +5,5 @@ import clothify.entity.Customer;
 
 public interface CustomerDao extends CrudDao<Customer> {
 
-
+    Customer findCustomerById(String id);
 }

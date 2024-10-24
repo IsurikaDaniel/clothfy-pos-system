@@ -1,6 +1,8 @@
 package clothify.dao.util;
 
 import clothify.entity.Account;
+import clothify.entity.Customer;
+import clothify.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
@@ -25,7 +27,8 @@ public class HibernateUtil {
             // Create Metadata from annotated classes
             Metadata metadata = new MetadataSources(standardRegistry)
                     .addAnnotatedClass(Account.class)
-                  
+                    .addAnnotatedClass(Employee.class)
+                    .addAnnotatedClass(Customer.class)
                     .getMetadataBuilder()
                     .applyImplicitNamingStrategy(ImplicitNamingStrategyJpaCompliantImpl.INSTANCE)
                     .build();

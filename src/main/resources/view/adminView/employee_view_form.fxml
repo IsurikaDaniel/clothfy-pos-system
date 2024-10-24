@@ -8,43 +8,43 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="685.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clothify.controller.admin.EmployeeViewFormController">
+<AnchorPane prefHeight="520.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clothify.controller.admin.EmployeeViewFormController">
    <children>
-      <ImageView fitHeight="253.0" fitWidth="502.0" layoutX="-2.0" layoutY="-6.0">
+      <ImageView fitHeight="527.0" fitWidth="348.0" layoutX="-2.0" layoutY="-6.0">
          <image>
             <Image url="@../../img/istockphoto-1197952605-612x612.jpg" />
          </image>
       </ImageView>
-      <JFXTextField fx:id="txtempID" layoutX="128.0" layoutY="381.0" prefHeight="25.0" prefWidth="241.0" promptText="Employee ID" unFocusColor="#2f2929" />
-      <JFXTextField fx:id="txtempName" layoutX="128.0" layoutY="420.0" prefHeight="25.0" prefWidth="241.0" promptText="Employee Name" unFocusColor="#2f2929" />
-      <JFXTextField fx:id="txtcontact" layoutX="128.0" layoutY="458.0" prefHeight="25.0" prefWidth="241.0" promptText="Contact" unFocusColor="#2f2929" />
-      <JFXTextField fx:id="txtEmail" layoutX="128.0" layoutY="494.0" prefHeight="25.0" prefWidth="241.0" promptText="Email" unFocusColor="#2f2929" />
-      <JFXTextField fx:id="txtAddress" layoutX="128.0" layoutY="533.0" prefHeight="25.0" prefWidth="241.0" promptText="Address" unFocusColor="#2f2929" />
-      <JFXTextField fx:id="txtCompany" layoutX="128.0" layoutY="574.0" prefHeight="25.0" prefWidth="241.0" promptText="Company " unFocusColor="#2f2929" />
-      <JFXButton layoutX="98.0" layoutY="640.0" onAction="#btnAddonAction" prefHeight="31.0" prefWidth="93.0" ripplerFill="#112e51" style="-fx-background-color: #365680; -fx-background-radius: 15;" text="ADD" textFill="WHITE">
+      <JFXTextField fx:id="txtempID" layoutX="403.0" layoutY="202.0" prefHeight="25.0" prefWidth="241.0" promptText="Employee ID" unFocusColor="#2f2929" />
+      <JFXTextField fx:id="txtempName" layoutX="403.0" layoutY="241.0" prefHeight="25.0" prefWidth="241.0" promptText="Employee Name" unFocusColor="#2f2929" />
+      <JFXTextField fx:id="txtcontact" layoutX="403.0" layoutY="279.0" prefHeight="25.0" prefWidth="241.0" promptText="Contact" unFocusColor="#2f2929" />
+      <JFXTextField fx:id="txtEmail" layoutX="403.0" layoutY="315.0" prefHeight="25.0" prefWidth="241.0" promptText="Email" unFocusColor="#2f2929" />
+      <JFXTextField fx:id="txtAddress" layoutX="403.0" layoutY="354.0" prefHeight="25.0" prefWidth="241.0" promptText="Address" unFocusColor="#2f2929" />
+      <JFXTextField fx:id="txtCompany" layoutX="403.0" layoutY="395.0" prefHeight="25.0" prefWidth="241.0" promptText="Company " unFocusColor="#2f2929" />
+      <JFXButton layoutX="356.0" layoutY="470.0" onAction="#btnAddonAction" prefHeight="31.0" prefWidth="93.0" ripplerFill="#112e51" style="-fx-background-color: #365680; -fx-background-radius: 15;" text="ADD" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font></JFXButton>
-      <JFXButton layoutX="219.0" layoutY="640.0" onAction="#btnUpdateonAction" prefHeight="31.0" prefWidth="93.0" ripplerFill="#112e51" style="-fx-background-color: #365680; -fx-background-radius: 15;" text="UPDATE" textFill="WHITE">
+      <JFXButton layoutX="477.0" layoutY="470.0" onAction="#btnUpdateonAction" prefHeight="31.0" prefWidth="93.0" ripplerFill="#112e51" style="-fx-background-color: #365680; -fx-background-radius: 15;" text="UPDATE" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="340.0" layoutY="640.0" onAction="#btnRemoveonAction" prefHeight="31.0" prefWidth="93.0" ripplerFill="#112e51" style="-fx-background-color: #365680; -fx-background-radius: 15;" text="REMOVE" textFill="WHITE">
+      <JFXButton layoutX="598.0" layoutY="470.0" onAction="#btnRemoveonAction" prefHeight="31.0" prefWidth="93.0" ripplerFill="#112e51" style="-fx-background-color: #365680; -fx-background-radius: 15;" text="REMOVE" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </JFXButton>
-      <Label layoutX="13.0" layoutY="143.0" text="Add Employee">
+      <Label layoutX="401.0" layoutY="50.0" text="Add Employee">
          <font>
             <Font size="36.0" />
          </font>
       </Label>
-      <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="433.0" layoutY="308.0">
+      <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="691.0" layoutY="138.0">
          <image>
             <Image url="@../../img/search.png" />
          </image>
       </ImageView>
-      <JFXTextField fx:id="txtSerchAddEmp" layoutX="98.0" layoutY="308.0" prefHeight="25.0" prefWidth="320.0" text="Search" unFocusColor="#7091ba" />
+      <JFXTextField fx:id="txtSearchAddEmp" layoutX="369.0" layoutY="138.0" prefHeight="25.0" prefWidth="307.0" text="Search" unFocusColor="#7091ba" />
    </children>
 </AnchorPane>

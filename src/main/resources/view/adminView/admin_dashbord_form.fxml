@@ -15,7 +15,32 @@
             <Image url="@../../img/dashBord.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="20.0" layoutY="180.0" onMousePressed="#clickOnActionAddEmp" onTouchPressed="#clickOnActionAddEmployee" text="Add Employee " textFill="WHITE">
+      <Label layoutX="16.0" layoutY="196.0" onMousePressed="#clickOnActionAddEmp" onTouchPressed="#clickOnActionAddEmployee" text="Add Employee " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="224.0" onMousePressed="#clickOnActionAddCus" onTouchPressed="#clickOnActionAddEmployee" text="Add Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="249.0" onMousePressed="#clickOnActionAddSup" onTouchPressed="#clickOnActionAddEmployee" text="Add Supplier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="169.0" text="Settings" textFill="#d7d7d7">
+         <font>
+            <Font name="Yu Gothic UI Semibold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="104.0" text="Inventory" textFill="#d7d7d7">
+         <font>
+            <Font name="Yu Gothic UI Semibold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="131.0" onMousePressed="#clickOnActionProduct" onTouchPressed="#clickOnActionAddEmployee" text="Product" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>

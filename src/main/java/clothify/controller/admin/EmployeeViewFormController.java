@@ -12,6 +12,8 @@ import java.sql.SQLException;
 
 public class EmployeeViewFormController {
 
+
+    public JFXTextField txtSearchAddEmp;
     @FXML
     private JFXTextField txtAddress;
 

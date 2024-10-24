@@ -11,13 +11,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import javafx.scene.Node;
-import javafx.stage.Window;
+
 
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
-import java.util.Objects;
+
 
 public class LoginFormController {
 
@@ -55,7 +54,7 @@ public class LoginFormController {
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
-                        stage.setTitle("DashBoard Form");
+                        stage.setTitle("Admin DashBoard Form");
                         stage.show();
                     }else if (dto.getJobRole().equals("Employee")){
                         Stage stage = (Stage) paneLogin.getScene().getWindow();
@@ -65,7 +64,7 @@ public class LoginFormController {
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
-                        stage.setTitle("DashBoard Form");
+                        stage.setTitle("Employee DashBoard Form");
                         stage.show();
                     }
 
